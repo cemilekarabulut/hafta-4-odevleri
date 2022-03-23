@@ -21,8 +21,8 @@ public class EvenOddDetectionThread implements Runnable {
                 else
                     oddNumbers.add(this.list.get(i));
             }
-            System.out.println("Even numbers in "+Thread.currentThread().getName()+": " + evenNumbers.size()+ " Max even number is " + Collections.max(evenNumbers));
-            System.out.println("Odd numbers in "+Thread.currentThread().getName()+": " + oddNumbers.size()+ " Max odd number is " + Collections.max(oddNumbers));
+            System.out.println("Even numbers in " + Thread.currentThread().getName() + ": " + evenNumbers.size() + " Max even number is " + Collections.max(evenNumbers));
+            System.out.println("Odd numbers in " + Thread.currentThread().getName() + ": " + oddNumbers.size() + " Max odd number is " + Collections.max(oddNumbers));
         } else if (Thread.currentThread().getName().substring(7).equals("1")) {
             for (int i = 2500; i < 5000; i++) {
                 if (this.list.get(i) % 2 == 0)
@@ -30,8 +30,8 @@ public class EvenOddDetectionThread implements Runnable {
                 else
                     oddNumbers.add(this.list.get(i));
             }
-            System.out.println("Even numbers in "+Thread.currentThread().getName()+": " + evenNumbers.size()+ " Max even number is " + Collections.max(evenNumbers));
-            System.out.println("Odd numbers in "+Thread.currentThread().getName()+": " + oddNumbers.size()+ " Max odd number is " + Collections.max(oddNumbers));
+            System.out.println("Even numbers in " + Thread.currentThread().getName() + ": " + evenNumbers.size() + " Max even number is " + Collections.max(evenNumbers));
+            System.out.println("Odd numbers in " + Thread.currentThread().getName() + ": " + oddNumbers.size() + " Max odd number is " + Collections.max(oddNumbers));
         } else if (Thread.currentThread().getName().substring(7).equals("2")) {
             for (int i = 5000; i < 7500; i++) {
                 if (this.list.get(i) % 2 == 0)
@@ -39,8 +39,8 @@ public class EvenOddDetectionThread implements Runnable {
                 else
                     oddNumbers.add(this.list.get(i));
             }
-            System.out.println("Even numbers in "+Thread.currentThread().getName()+": " + evenNumbers.size()+ " Max even number is " + Collections.max(evenNumbers));
-            System.out.println("Odd numbers in "+Thread.currentThread().getName()+": " + oddNumbers.size()+ " Max odd number is " + Collections.max(oddNumbers));
+            System.out.println("Even numbers in " + Thread.currentThread().getName() + ": " + evenNumbers.size() + " Max even number is " + Collections.max(evenNumbers));
+            System.out.println("Odd numbers in " + Thread.currentThread().getName() + ": " + oddNumbers.size() + " Max odd number is " + Collections.max(oddNumbers));
         } else if (Thread.currentThread().getName().substring(7).equals("3")) {
             for (int i = 7500; i < 10000; i++) {
                 if (this.list.get(i) % 2 == 0)
@@ -48,8 +48,8 @@ public class EvenOddDetectionThread implements Runnable {
                 else
                     oddNumbers.add(this.list.get(i));
             }
-            System.out.println("Even numbers in "+Thread.currentThread().getName()+": " + evenNumbers.size()+ " Max even number is " + Collections.max(evenNumbers));
-            System.out.println("Odd numbers in "+Thread.currentThread().getName()+": " + oddNumbers.size()+ " Max odd number is " + Collections.max(oddNumbers));
+            System.out.println("Even numbers in " + Thread.currentThread().getName() + ": " + evenNumbers.size() + " Max even number is " + Collections.max(evenNumbers));
+            System.out.println("Odd numbers in " + Thread.currentThread().getName() + ": " + oddNumbers.size() + " Max odd number is " + Collections.max(oddNumbers));
         }
     }
 }

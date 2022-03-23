@@ -1,19 +1,18 @@
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
 public class Main {
     public static void main(String... args) throws InterruptedException {
         List<Integer> numList = new ArrayList<>();
-        for(int i = 1; i <= 10000; i++){
+        for (int i = 1; i <= 10000; i++) {
             numList.add(i);
         }
 
         List<Integer> evenNumbers = new ArrayList<>();
         List<Integer> oddNumbers = new ArrayList<>();
 
-        EvenOddDetectionThread detector = new EvenOddDetectionThread(numList,evenNumbers,oddNumbers);
+        EvenOddDetectionThread detector = new EvenOddDetectionThread(numList, evenNumbers, oddNumbers);
 
         Thread firstThread = new Thread(detector);
         Thread secondThread = new Thread(detector);
@@ -30,7 +29,7 @@ public class Main {
         thirdThread.join();
         fourthThread.join();
 
-        System.out.println("Even numbers in total: " + evenNumbers.size()+ " Max even number is " + Collections.max(evenNumbers));
-        System.out.println("Odd numbers in total: " + oddNumbers.size()+ " Max odd number is " + Collections.max(oddNumbers));
+        System.out.println("Even numbers in total: " + evenNumbers.size() + " Max even number is " + Collections.max(evenNumbers));
+        System.out.println("Odd numbers in total: " + oddNumbers.size() + " Max odd number is " + Collections.max(oddNumbers));
     }
 }
