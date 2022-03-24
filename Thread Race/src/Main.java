@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
@@ -13,10 +12,10 @@ public class Main {
         List<Integer> evenNumbers = new CopyOnWriteArrayList<>();
         List<Integer> oddNumbers = new CopyOnWriteArrayList<>();
 
-        EvenOddDetectionThread detector1 = new EvenOddDetectionThread(new ArrayList<>(numList.subList(0,2500)), evenNumbers, oddNumbers);
-        EvenOddDetectionThread detector2 = new EvenOddDetectionThread(new ArrayList<>(numList.subList(2500,5000)), evenNumbers, oddNumbers);
-        EvenOddDetectionThread detector3 = new EvenOddDetectionThread(new ArrayList<>(numList.subList(5000,7500)), evenNumbers, oddNumbers);
-        EvenOddDetectionThread detector4 = new EvenOddDetectionThread(new ArrayList<>(numList.subList(7500,10000)), evenNumbers, oddNumbers);
+        EvenOddDetectionThread detector1 = new EvenOddDetectionThread(new ArrayList<>(numList.subList(0, 2500)), evenNumbers, oddNumbers);
+        EvenOddDetectionThread detector2 = new EvenOddDetectionThread(new ArrayList<>(numList.subList(2500, 5000)), evenNumbers, oddNumbers);
+        EvenOddDetectionThread detector3 = new EvenOddDetectionThread(new ArrayList<>(numList.subList(5000, 7500)), evenNumbers, oddNumbers);
+        EvenOddDetectionThread detector4 = new EvenOddDetectionThread(new ArrayList<>(numList.subList(7500, 10000)), evenNumbers, oddNumbers);
 
         Thread firstThread = new Thread(detector1);
         Thread secondThread = new Thread(detector2);
