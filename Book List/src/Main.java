@@ -15,6 +15,11 @@ public class Main {
         books.add(new Book("Harry Potter and the Philosopher's Stone", "J.K. Rowling", 223, LocalDate.of(1997, Month.JULY, 1)));
         books.add(new Book("Aşk-ı Memnu", "Halit Ziya Uşaklıgil", 424, LocalDate.of(1901, Month.JANUARY, 1)));
         books.add(new Book("The Little Prince", "Antoine de Saint-Exupéry", 96, LocalDate.of(1943, Month.APRIL, 1)));
+        books.add(new Book("Puslu Kıtalar Atlası", "İhsan Oktay Anar", 238, LocalDate.of(1995, Month.JANUARY, 1)));
+        books.add(new Book("What Men Live By", "Leo Tolstoy", 112, LocalDate.of(1885, Month.JANUARY, 1)));
+        books.add(new Book("Animal Farm", "George Orwell", 152, LocalDate.of(1945, Month.AUGUST, 1)));
+        books.add(new Book("The Metamorphosis", "Franz Kafka", 80, LocalDate.of(1915, Month.JANUARY, 1)));
+        books.add(new Book("Chess Story", "Stefan Zweig", 85, LocalDate.of(1942, Month.JANUARY, 1)));
 
         Map<String, String> bookAndAuthor = books.stream().collect(toMap(Book::getName, Book::getAuthorName));
 
