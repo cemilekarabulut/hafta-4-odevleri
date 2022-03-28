@@ -56,7 +56,7 @@ public class OperatorGUI extends JFrame {
     public static void main(String... args) {
         Helper.setLayout();
         Operator operator = new Operator();
-        operator.setName("x");
+        operator.setName("Welcome to Patike Clone!");
         OperatorGUI operatorGUI = new OperatorGUI(operator);
         DBConnector.getInstance();
     }
